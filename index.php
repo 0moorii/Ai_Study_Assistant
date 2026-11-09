@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $promptShown = $prompt;
 
-        $apiKey = getenv('OPENAI_API_KEY');
+        $apiKey = "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";
         if (!$apiKey) {
             $error = 'OPENAI_API_KEY is not set on the server.';
         } else {
@@ -133,15 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     <?php endif; ?>
 
-    <div class="requirements">
-        <strong>Requirements demonstrated:</strong>
-        <ul>
-            <li>Cloud-based generative AI via OpenAI API</li>
-            <li>Multiple example prompts</li>
-            <li>Zero-shot prompting</li>
-            <li>One-shot prompting</li>
-        </ul>
-    </div>
 </div>
 </body>
 </html>
