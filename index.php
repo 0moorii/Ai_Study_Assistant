@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $promptShown = $prompt;
 
-        $apiKey = "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";
+        $apiKey = getenv('OPENAI_API_KEY');
         if (!$apiKey) {
             $error = 'OPENAI_API_KEY is not set on the server.';
         } else {
